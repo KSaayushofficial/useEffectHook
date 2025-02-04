@@ -1,12 +1,33 @@
-<<<<<<< HEAD
-# React + Vite
+📖 Introduction:
+The useEffect Hook allows you to perform side effects in functional components. It is commonly used for fetching data, managing subscriptions, handling timers, and updating the DOM after render.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Why useEffect?
+Runs after the component renders.
+Can be controlled to run only when specific values change.
+Supports cleanup functions to prevent memory leaks.
 
-Currently, two official plugins are available:
+📌 Common Use Cases:
+✔ Fetching data from an API
+✔ Subscribing to events (WebSockets, Firebase, etc.)
+✔ Managing timers (setTimeout, setInterval)
+✔ Updating the document title or modifying the DOM
+✔ Cleaning up event listeners when a component unmounts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
-# useEffectHook
->>>>>>> 297c22c90b60d3be3bce26454260e53f339ae684
+⚡ Behavior of useEffect:
+By default, it runs after every render.
+Can be configured to run only once (on mount) or only when dependencies change.
+Supports a cleanup function to handle unsubscriptions and memory management.
+
+🛠 Best Practices:
+Use dependencies wisely to avoid unnecessary re-renders.
+Always clean up subscriptions and timers in the cleanup function.
+Avoid unnecessary API calls by optimizing dependency arrays.
+
+📜 Key Takeaways:
+useEffect simplifies handling side effects in functional components.
+Proper dependency management ensures optimized performance.
+Cleanup functions prevent memory leaks and ensure better app performance.
+
+🔗 Additional Resources:
+React Official Documentation
+React Hooks Guide
